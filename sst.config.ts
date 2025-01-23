@@ -4,10 +4,6 @@ import { appConfig } from './stacks/config';
 
 export default $config({
   app(input) {
-    if (!appConfig.stages.includes(input.stage)) {
-      input.stage = 'production';
-    }
-
     return {
       name: appConfig.name,
       removal: input?.stage === 'production' ? 'retain' : 'remove',
