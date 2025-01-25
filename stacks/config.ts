@@ -1,4 +1,4 @@
 export const appConfig = {
-  name: 'projectName',
-  stages: ['production'],
+  name: "upaki",
+  stages: ["production"],
 };
